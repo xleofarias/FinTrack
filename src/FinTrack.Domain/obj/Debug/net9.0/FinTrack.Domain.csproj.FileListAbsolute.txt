@@ -1,0 +1,11 @@
+C:\Users\leofa\source\repos\FinTrack\src\FinTrack.Domain\bin\Debug\net9.0\FinTrack.Domain.deps.json
+C:\Users\leofa\source\repos\FinTrack\src\FinTrack.Domain\bin\Debug\net9.0\FinTrack.Domain.dll
+C:\Users\leofa\source\repos\FinTrack\src\FinTrack.Domain\bin\Debug\net9.0\FinTrack.Domain.pdb
+C:\Users\leofa\source\repos\FinTrack\src\FinTrack.Domain\obj\Debug\net9.0\FinTrack.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leofa\source\repos\FinTrack\src\FinTrack.Domain\obj\Debug\net9.0\FinTrack.Domain.AssemblyInfoInputs.cache
+C:\Users\leofa\source\repos\FinTrack\src\FinTrack.Domain\obj\Debug\net9.0\FinTrack.Domain.AssemblyInfo.cs
+C:\Users\leofa\source\repos\FinTrack\src\FinTrack.Domain\obj\Debug\net9.0\FinTrack.Domain.csproj.CoreCompileInputs.cache
+C:\Users\leofa\source\repos\FinTrack\src\FinTrack.Domain\obj\Debug\net9.0\FinTrack.Domain.dll
+C:\Users\leofa\source\repos\FinTrack\src\FinTrack.Domain\obj\Debug\net9.0\refint\FinTrack.Domain.dll
+C:\Users\leofa\source\repos\FinTrack\src\FinTrack.Domain\obj\Debug\net9.0\FinTrack.Domain.pdb
+C:\Users\leofa\source\repos\FinTrack\src\FinTrack.Domain\obj\Debug\net9.0\ref\FinTrack.Domain.dll

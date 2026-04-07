@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "bW2HWkOgDew=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\leofa\\source\\repos\\FinTrack\\src\\FinTrack.API\\FinTrack.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\leofa\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.11\\microsoft.aspnetcore.openapi.9.0.11.nupkg.sha512",
+    "C:\\Users\\leofa\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}
