@@ -101,3 +101,4 @@ C:\Users\leofa\source\repos\FinTrack\tests\FinTrack.UnitTests\obj\Debug\net9.0\r
 C:\Users\leofa\source\repos\FinTrack\tests\FinTrack.UnitTests\obj\Debug\net9.0\FinTrack.UnitTests.pdb
 C:\Users\leofa\source\repos\FinTrack\tests\FinTrack.UnitTests\obj\Debug\net9.0\FinTrack.UnitTests.genruntimeconfig.cache
 C:\Users\leofa\source\repos\FinTrack\tests\FinTrack.UnitTests\obj\Debug\net9.0\ref\FinTrack.UnitTests.dll
+C:\Users\leofa\source\repos\FinTrack\tests\FinTrack.UnitTests\obj\Debug\net9.0\FinTrack.UnitTests.sourcelink.json

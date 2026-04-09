@@ -1,4 +1,5 @@
 ﻿using FinTrack.Domain.Entities;
+using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,6 +11,7 @@ namespace FinTrack.Application.Transactions
     public interface ITransactionRepository
     {
         Task AddAsync(Transaction transaction, CancellationToken ct = default);
+        Task UpdateDescription(Transaction transaction, CancellationToken ct = default);
     }
           //● JSON (HTTP Request)
           //      ↓

@@ -1,28 +1,26 @@
 ﻿using MediatR;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Transactions;
+using FinTrack.Domain.Entities;
 
 namespace FinTrack.Application.Transactions.Commands.CreateTransaction
 {
     public class CreateTransactionCommandHandler : IRequestHandler<CreateTransactionCommand, Guid>
     {
-        private readonly ITransactionRepository _transactionRepository;
-        public CreateTransactionCommandHandler(ITransactionRepository transactionRepository)
+        private readonly ITransactionRepository _repository;
+        public CreateTransactionCommandHandler(ITransactionRepository repository)
         {
-            _transactionRepository = transactionRepository;
+            _repository = repository;
         }
 
-        public Task<Guid> Handle(CreateTransactionCommand request, CancellationToken cancellationToken)
+        public async Task<Guid> Handle(CreateTransactionCommand request, CancellationToken cancellationToken)
         {
             // TODO: use Transaction.Create(...) passando os dados do request
-            // TODO: chame o repositório para persistir
-            // TODO: retorne o Id da transação criada
-            throw new NotImplementedException();
-        }
+            var transaction = Transaction.Create(request.Amount, request.Description, request.Date, request.Type, request.CategoryId);
 
+            // TODO: chame o repositório para persistir
+            await _repository.AddAsync(transaction);
+
+            // TODO: retorne o Id da transação criada
+            return transaction.Id;
+        }
     }
 }
