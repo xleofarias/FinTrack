@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\leofa\\source\\repos\\FinTrack\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BDBA3E8D-AD6F-4F70-B50E-FD507DFCC335}|src\\FinTrack.Application\\FinTrack.Application.csproj|c:\\users\\leofa\\source\\repos\\fintrack\\src\\fintrack.application\\transactions\\itransactionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BDBA3E8D-AD6F-4F70-B50E-FD507DFCC335}|src\\FinTrack.Application\\FinTrack.Application.csproj|solutionrelative:src\\fintrack.application\\transactions\\itransactionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BDBA3E8D-AD6F-4F70-B50E-FD507DFCC335}|src\\FinTrack.Application\\FinTrack.Application.csproj|c:\\users\\leofa\\source\\repos\\fintrack\\src\\fintrack.application\\transactions\\commands\\updatetransaction\\updatetransactiondescriptioncommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDBA3E8D-AD6F-4F70-B50E-FD507DFCC335}|src\\FinTrack.Application\\FinTrack.Application.csproj|solutionrelative:src\\fintrack.application\\transactions\\commands\\updatetransaction\\updatetransactiondescriptioncommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BDBA3E8D-AD6F-4F70-B50E-FD507DFCC335}|src\\FinTrack.Application\\FinTrack.Application.csproj|c:\\users\\leofa\\source\\repos\\fintrack\\src\\fintrack.application\\transactions\\commands\\createtransaction\\createtransactioncommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BDBA3E8D-AD6F-4F70-B50E-FD507DFCC335}|src\\FinTrack.Application\\FinTrack.Application.csproj|solutionrelative:src\\fintrack.application\\transactions\\commands\\createtransaction\\createtransactioncommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BDBA3E8D-AD6F-4F70-B50E-FD507DFCC335}|src\\FinTrack.Application\\FinTrack.Application.csproj|c:\\users\\leofa\\source\\repos\\fintrack\\src\\fintrack.application\\transactions\\commands\\createtransaction\\createtransactioncommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BDBA3E8D-AD6F-4F70-B50E-FD507DFCC335}|src\\FinTrack.Application\\FinTrack.Application.csproj|solutionrelative:src\\fintrack.application\\transactions\\commands\\createtransaction\\createtransactioncommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{976194BF-B031-4E15-913E-DBAED915A375}|src\\FinTrack.Domain\\FinTrack.Domain.csproj|c:\\users\\leofa\\source\\repos\\fintrack\\src\\fintrack.domain\\entities\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{976194BF-B031-4E15-913E-DBAED915A375}|src\\FinTrack.Domain\\FinTrack.Domain.csproj|solutionrelative:src\\fintrack.domain\\entities\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BDBA3E8D-AD6F-4F70-B50E-FD507DFCC335}|src\\FinTrack.Application\\FinTrack.Application.csproj|c:\\users\\leofa\\source\\repos\\fintrack\\src\\fintrack.application\\transactions\\commands\\updatetransaction\\updatetransactiondescriptioncommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDBA3E8D-AD6F-4F70-B50E-FD507DFCC335}|src\\FinTrack.Application\\FinTrack.Application.csproj|solutionrelative:src\\fintrack.application\\transactions\\commands\\updatetransaction\\updatetransactiondescriptioncommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -78,54 +70,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Transaction.cs",
-              "DocumentMoniker": "C:\\Users\\leofa\\source\\repos\\FinTrack\\src\\FinTrack.Domain\\Entities\\Transaction.cs",
-              "RelativeDocumentMoniker": "src\\FinTrack.Domain\\Entities\\Transaction.cs",
-              "ToolTip": "C:\\Users\\leofa\\source\\repos\\FinTrack\\src\\FinTrack.Domain\\Entities\\Transaction.cs",
-              "RelativeToolTip": "src\\FinTrack.Domain\\Entities\\Transaction.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "UpdateTransactionDescriptionCommand.cs",
+              "DocumentMoniker": "C:\\Users\\leofa\\source\\repos\\FinTrack\\src\\FinTrack.Application\\Transactions\\Commands\\UpdateTransaction\\UpdateTransactionDescriptionCommand.cs",
+              "RelativeDocumentMoniker": "src\\FinTrack.Application\\Transactions\\Commands\\UpdateTransaction\\UpdateTransactionDescriptionCommand.cs",
+              "ToolTip": "C:\\Users\\leofa\\source\\repos\\FinTrack\\src\\FinTrack.Application\\Transactions\\Commands\\UpdateTransaction\\UpdateTransactionDescriptionCommand.cs",
+              "RelativeToolTip": "src\\FinTrack.Application\\Transactions\\Commands\\UpdateTransaction\\UpdateTransactionDescriptionCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-09T00:21:11.103Z",
+              "WhenOpened": "2026-04-09T02:10:00.297Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ITransactionRepository.cs",
-              "DocumentMoniker": "C:\\Users\\leofa\\source\\repos\\FinTrack\\src\\FinTrack.Application\\Transactions\\ITransactionRepository.cs",
-              "RelativeDocumentMoniker": "src\\FinTrack.Application\\Transactions\\ITransactionRepository.cs",
-              "ToolTip": "C:\\Users\\leofa\\source\\repos\\FinTrack\\src\\FinTrack.Application\\Transactions\\ITransactionRepository.cs",
-              "RelativeToolTip": "src\\FinTrack.Application\\Transactions\\ITransactionRepository.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABkAAABEAAAAAAAAAA==",
+              "Title": "UpdateTransactionDescriptionCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\leofa\\source\\repos\\FinTrack\\src\\FinTrack.Application\\Transactions\\Commands\\UpdateTransaction\\UpdateTransactionDescriptionCommandHandler.cs",
+              "RelativeDocumentMoniker": "src\\FinTrack.Application\\Transactions\\Commands\\UpdateTransaction\\UpdateTransactionDescriptionCommandHandler.cs",
+              "ToolTip": "C:\\Users\\leofa\\source\\repos\\FinTrack\\src\\FinTrack.Application\\Transactions\\Commands\\UpdateTransaction\\UpdateTransactionDescriptionCommandHandler.cs",
+              "RelativeToolTip": "src\\FinTrack.Application\\Transactions\\Commands\\UpdateTransaction\\UpdateTransactionDescriptionCommandHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-08T00:51:11.577Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CreateTransactionCommandHandler.cs",
-              "DocumentMoniker": "C:\\Users\\leofa\\source\\repos\\FinTrack\\src\\FinTrack.Application\\Transactions\\Commands\\CreateTransaction\\CreateTransactionCommandHandler.cs",
-              "RelativeDocumentMoniker": "src\\FinTrack.Application\\Transactions\\Commands\\CreateTransaction\\CreateTransactionCommandHandler.cs",
-              "ToolTip": "C:\\Users\\leofa\\source\\repos\\FinTrack\\src\\FinTrack.Application\\Transactions\\Commands\\CreateTransaction\\CreateTransactionCommandHandler.cs",
-              "RelativeToolTip": "src\\FinTrack.Application\\Transactions\\Commands\\CreateTransaction\\CreateTransactionCommandHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-07T02:42:00.307Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CreateTransactionCommand.cs",
-              "DocumentMoniker": "C:\\Users\\leofa\\source\\repos\\FinTrack\\src\\FinTrack.Application\\Transactions\\Commands\\CreateTransaction\\CreateTransactionCommand.cs",
-              "RelativeDocumentMoniker": "src\\FinTrack.Application\\Transactions\\Commands\\CreateTransaction\\CreateTransactionCommand.cs",
-              "ToolTip": "C:\\Users\\leofa\\source\\repos\\FinTrack\\src\\FinTrack.Application\\Transactions\\Commands\\CreateTransaction\\CreateTransactionCommand.cs",
-              "RelativeToolTip": "src\\FinTrack.Application\\Transactions\\Commands\\CreateTransaction\\CreateTransactionCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-07T02:41:58.097Z",
+              "WhenOpened": "2026-04-09T02:05:40.066Z",
               "EditorCaption": ""
             }
           ]

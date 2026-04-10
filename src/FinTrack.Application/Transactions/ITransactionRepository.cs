@@ -1,15 +1,10 @@
 ﻿using FinTrack.Domain.Entities;
-using Microsoft.IdentityModel.Tokens;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FinTrack.Application.Transactions
 {
     public interface ITransactionRepository
     {
+        Task<Transaction> GetTransactionById(Guid id, CancellationToken ct = default);
         Task AddAsync(Transaction transaction, CancellationToken ct = default);
         Task UpdateDescription(Transaction transaction, CancellationToken ct = default);
     }

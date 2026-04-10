@@ -12,9 +12,15 @@ namespace FinTrack.Application.Transactions.Commands.UpdateTransaction
             _repository = repository;
         }
 
-        public Task<string> Handle(UpdateTransactionDescriptionCommand request, CancellationToken cancellationToken)
+        public async Task<string> Handle(UpdateTransactionDescriptionCommand request, CancellationToken ct = default)
         {
-            throw new NotImplementedException();
+            var transaction = await _repository.GetTransactionById(request.Id, ct);
+
+            transaction.UpdateDescription(request.Description);
+
+            await _repository.UpdateDescription(transaction, ct);
+
+            return transaction.Description;
         }
     }
 }

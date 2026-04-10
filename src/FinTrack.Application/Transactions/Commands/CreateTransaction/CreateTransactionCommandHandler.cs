@@ -11,7 +11,7 @@ namespace FinTrack.Application.Transactions.Commands.CreateTransaction
             _repository = repository;
         }
 
-        public async Task<Guid> Handle(CreateTransactionCommand request, CancellationToken cancellationToken)
+        public async Task<Guid> Handle(CreateTransactionCommand request, CancellationToken ct = default)
         {
             // TODO: use Transaction.Create(...) passando os dados do request
             var transaction = Transaction.Create(request.Amount, request.Description, request.Date, request.Type, request.CategoryId);
