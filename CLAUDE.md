@@ -31,9 +31,9 @@ FinTrack is an ASP.NET Core 9.0 Web API following Clean Architecture. Dependency
 **Layer responsibilities:**
 
 - **Domain** (`src/FinTrack.Domain`): Core business rules. Contains entities (`Transaction`, `Category`), the `Money` value object, the `TransactionType` enum (Income/Expense), and `DomainException`. No NuGet dependencies.
-- **Application** (`src/FinTrack.Application`): Use cases and application services. Currently empty — add command/query handlers here.
-- **Infrastructure** (`src/FinTrack.Infrastructure`): Repositories, EF Core, external services. Currently empty scaffold.
-- **API** (`src/FinTrack.API`): ASP.NET Core host, controllers, OpenAPI. Currently has only a placeholder WeatherForecast endpoint.
+- **Application** (`src/FinTrack.Application`): Use cases via MediatR CQRS. Has `ITransactionRepository` interface and 3 command handlers: `CreateTransaction`, `UpdateTransactionAmount`, `UpdateTransactionDescription`. Queries folder exists but empty.
+- **Infrastructure** (`src/FinTrack.Infrastructure`): Repositories, EF Core (Npgsql/PostgreSQL). `FinTrackDbContext` and `TransactionRepository` are scaffolded but all methods throw `NotImplementedException`.
+- **API** (`src/FinTrack.API`): ASP.NET Core host, controllers, OpenAPI. MediatR not wired up yet. Placeholder WeatherForecast endpoint only.
 
 **Domain design conventions:**
 
@@ -54,11 +54,16 @@ FinTrack is an ASP.NET Core 9.0 Web API following Clean Architecture. Dependency
 | `Category` | 8 | `Create` (valid, empty name, invalid type, empty color), `UpdateName` (valid, empty), `UpdateColor` (valid, empty) |
 | `Transaction` | 7 | `Create` (valid, empty description, future date, empty categoryId, invalid type), `UpdateDescription` (valid, empty) |
 
-### Application
-No use cases implemented yet — no tests.
+### Application (parcial)
+
+| Handler | Tests | What's covered |
+|---|---|---|
+| `UpdateTransactionAmountCommandHandler` | 1 | Happy path: busca transação, chama `UpdateAmount`, chama `UpdateAsync` |
+| `UpdateTransactionDescriptionCommandHandler` | 1 | Happy path: busca transação, chama `UpdateDescription`, chama `UpdateAsync` |
+| `CreateTransactionCommandHandler` | 0 | Sem testes ainda — pasta criada |
 
 ### Infrastructure
-No repositories implemented yet — no tests.
+Repositórios não implementados — sem testes.
 
 ### API
-No endpoints implemented yet — no tests.
+Sem endpoints reais ainda — sem testes.

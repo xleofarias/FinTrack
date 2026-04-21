@@ -13,13 +13,10 @@ namespace FinTrack.Application.Transactions.Commands.CreateTransaction
 
         public async Task<Guid> Handle(CreateTransactionCommand request, CancellationToken ct = default)
         {
-            // TODO: use Transaction.Create(...) passando os dados do request
             var transaction = Transaction.Create(request.Amount, request.Description, request.Date, request.Type, request.CategoryId);
 
-            // TODO: chame o repositório para persistir
             await _repository.AddAsync(transaction);
 
-            // TODO: retorne o Id da transação criada
             return transaction.Id;
         }
     }

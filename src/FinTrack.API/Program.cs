@@ -1,41 +1,39 @@
-var builder = WebApplication.CreateBuilder(args);
+using FinTrack.Application.Transactions;
+using FinTrack.Application.Transactions.Commands.CreateTransaction;
+using FinTrack.Infrastructure.Datas;
+using FinTrack.Infrastructure.Repositorys;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using System.Reflection;
 
-// Add services to the container.
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-builder.Services.AddOpenApi();
-
-var app = builder.Build();
-
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+internal class Program
 {
-    app.MapOpenApi();
-}
+    private static void Main(string[] args)
+    {
+        var builder = WebApplication.CreateBuilder(args);
 
-app.UseHttpsRedirection();
+        builder.Services.AddOpenApi();
 
-var summaries = new[]
-{
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
+        //Add DbContext
+        var connectionString = builder.Configuration.GetConnectionString("FinTrackConnection");
+        builder.Services.AddDbContext<FinTrackDbContext>(options => options.UseNpgsql(connectionString));
 
-app.MapGet("/weatherforecast", () =>
-{
-    var forecast =  Enumerable.Range(1, 5).Select(index =>
-        new WeatherForecast
-        (
-            DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-            Random.Shared.Next(-20, 55),
-            summaries[Random.Shared.Next(summaries.Length)]
-        ))
-        .ToArray();
-    return forecast;
-})
-.WithName("GetWeatherForecast");
+        //Add Repositories
+        builder.Services.AddScoped<ITransactionRepository, TransactionRepository>();
 
-app.Run();
+        //Add MediatR
+        builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(CreateTransactionCommandHandler).Assembly));
 
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+        var app = builder.Build();
+
+        // Configure the HTTP request pipeline.
+        if (app.Environment.IsDevelopment())
+        {
+            app.MapOpenApi();
+        }
+
+        app.UseHttpsRedirection();
+
+        app.Run();
+    }
 }
