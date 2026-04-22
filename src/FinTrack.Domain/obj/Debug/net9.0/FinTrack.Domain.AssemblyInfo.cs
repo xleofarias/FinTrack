@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FinTrack.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+70b17f6acfa6d4c63f0d1f4987f7fa8d04e170b5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ee80cb89b1ac80a4bd73aedf5e1f934edd5fdc9a")]
 [assembly: System.Reflection.AssemblyProductAttribute("FinTrack.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FinTrack.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

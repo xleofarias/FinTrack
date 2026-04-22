@@ -1,5 +1,4 @@
 ﻿using MediatR;
-using FinTrack.Application;
 using FinTrack.Application.Exceptions;
 
 namespace FinTrack.Application.Transactions.Commands.UpdateTransaction.UpdateAmount
