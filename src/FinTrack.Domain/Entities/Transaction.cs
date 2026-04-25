@@ -13,6 +13,8 @@ public sealed class Transaction : Entity
     public TransactionType Type { get; private set; }
     public Guid CategoryId { get; private set; }
 
+    private Transaction() { }
+
     private Transaction(
         Guid id,
         Money amount,

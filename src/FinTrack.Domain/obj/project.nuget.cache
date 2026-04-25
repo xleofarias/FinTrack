@@ -1,11 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mh8nyJwlubw=",
+  "dgSpecHash": "UuIy14WpROI=",
   "success": true,
   "projectFilePath": "/home/leofnz/Repos/FinTrack/src/FinTrack.Domain/FinTrack.Domain.csproj",
-  "expectedPackageFiles": [
-    "/home/leofnz/.nuget/packages/microsoft.netcore.app.ref/9.0.15/microsoft.netcore.app.ref.9.0.15.nupkg.sha512",
-    "/home/leofnz/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.15/microsoft.aspnetcore.app.ref.9.0.15.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }

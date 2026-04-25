@@ -7,7 +7,6 @@ using FinTrack.Application.Transactions.Querys.GetByIdTransactionQuery;
 using FinTrack.Domain.ValueObjects;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Routing;
 
 namespace FinTrack.API.Controllers
 {
@@ -38,7 +37,7 @@ namespace FinTrack.API.Controllers
             var query = new GetByIdTransactionQuery(id);
 
             if(query.Id == Guid.Empty)
-                return NotFound();
+                return NotFound("Transaction not found.");
 
             var transaction = await _mediator.Send(query, ct);
 
@@ -46,7 +45,7 @@ namespace FinTrack.API.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create(CreateTransactionRequest request, CancellationToken ct = default)
+        public async Task<IActionResult> Create([FromBody] CreateTransactionRequest request, CancellationToken ct = default)
         {
             var money = Money.Create(request.Amount, request.Currency);
             var description = request.Description;

@@ -40,7 +40,7 @@ ScaffoldingReadMe.txt
 ~$*
 *~
 CodeCoverage/
-CLAUDE.md
+.env
 
 # MSBuild Binary and Structured Log
 *.binlog

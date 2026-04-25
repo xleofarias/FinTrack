@@ -2,6 +2,6 @@
 {
     public class UpdateTransactionDescriptionRequest
     {
-        public string Description { get; set; }
+        public required string Description { get; set; }
     }
 }

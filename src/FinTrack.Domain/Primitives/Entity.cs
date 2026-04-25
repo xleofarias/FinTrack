@@ -2,6 +2,7 @@ namespace FinTrack.Domain.Primitives;
 
 public abstract class Entity
 {
+    protected Entity() {}
     protected Entity(Guid id)
     {
         if (id == Guid.Empty)

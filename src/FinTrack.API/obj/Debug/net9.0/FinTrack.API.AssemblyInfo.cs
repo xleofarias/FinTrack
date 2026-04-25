@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FinTrack.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ee80cb89b1ac80a4bd73aedf5e1f934edd5fdc9a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6f57ce8d5d52cda842529278d47177d66a594c83")]
 [assembly: System.Reflection.AssemblyProductAttribute("FinTrack.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FinTrack.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
