@@ -1,6 +1,6 @@
 using FinTrack.Domain.Enums;
 
-namespace FinTrack.API.Contracts
+namespace FinTrack.API.Contracts.Transactions
 {
     public class CreateTransactionRequest
     {

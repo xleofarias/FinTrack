@@ -1,4 +1,4 @@
-﻿using FinTrack.API.Contracts;
+﻿using FinTrack.API.Contracts.Transactions;
 using FinTrack.Application.Transactions.Commands.CreateTransaction;
 using FinTrack.Application.Transactions.Commands.UpdateTransaction.UpdateAmount;
 using FinTrack.Application.Transactions.Commands.UpdateTransaction.UpdateDescription;

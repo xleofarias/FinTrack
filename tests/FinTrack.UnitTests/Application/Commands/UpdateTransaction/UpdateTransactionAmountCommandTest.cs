@@ -2,14 +2,7 @@
 using FinTrack.Application.Transactions.Commands.UpdateTransaction.UpdateAmount;
 using FinTrack.Domain.Entities;
 using FinTrack.Domain.ValueObjects;
-using FluentAssertions;
 using Moq;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace FinTrack.UnitTests.Application.Commands.UpdateTransaction
 {
     public class UpdateTransactionAmountCommandTest

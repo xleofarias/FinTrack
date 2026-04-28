@@ -1,4 +1,4 @@
-﻿namespace FinTrack.API.Contracts
+﻿namespace FinTrack.API.Contracts.Transactions
 {
     public class UpdateTransactionDescriptionRequest
     {

@@ -1,9 +1,11 @@
 using FinTrack.Application.Transactions;
+using FinTrack.Application.Categories;
 using FinTrack.Application.Transactions.Commands.CreateTransaction;
 using FinTrack.Infrastructure.Datas;
-using FinTrack.Infrastructure.Repositorys;
+using FinTrack.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
 using DotNetEnv;
+using FinTrack.Application.Categories.Commands.CreateCategoryCommand;
 
 internal class Program
 {
@@ -22,9 +24,11 @@ internal class Program
 
         //Add Repositories
         builder.Services.AddScoped<ITransactionRepository, TransactionRepository>();
+        builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 
         //Add MediatR
         builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(CreateTransactionCommandHandler).Assembly));
+        builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(CreateCategoryCommandHandler).Assembly));
 
         //ADD Controllers
         builder.Services.AddControllers()

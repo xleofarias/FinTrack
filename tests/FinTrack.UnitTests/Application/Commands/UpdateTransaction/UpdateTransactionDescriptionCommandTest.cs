@@ -2,7 +2,6 @@
 using FinTrack.Application.Transactions;
 using FinTrack.Domain.Entities;
 using FinTrack.Domain.ValueObjects;
-using FluentAssertions;
 using FinTrack.Application.Transactions.Commands.UpdateTransaction.UpdateDescription;
 
 namespace FinTrack.UnitTests.Application.Commands.UpdateTransaction

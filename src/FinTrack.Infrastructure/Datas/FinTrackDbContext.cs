@@ -8,7 +8,7 @@ namespace FinTrack.Infrastructure.Datas
         public FinTrackDbContext(DbContextOptions<FinTrackDbContext> options) : base(options) { }
 
         public DbSet<Transaction> Transactions { get; set; }
-
+        public DbSet<Category> Categories { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

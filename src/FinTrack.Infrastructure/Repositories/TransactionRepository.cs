@@ -3,7 +3,7 @@ using FinTrack.Domain.Entities;
 using FinTrack.Infrastructure.Datas;
 using Microsoft.EntityFrameworkCore;
 
-namespace FinTrack.Infrastructure.Repositorys
+namespace FinTrack.Infrastructure.Repositories
 {
     public class TransactionRepository : ITransactionRepository
     {
