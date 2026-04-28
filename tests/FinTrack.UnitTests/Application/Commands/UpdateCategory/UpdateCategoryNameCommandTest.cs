@@ -16,6 +16,7 @@ namespace FinTrack.UnitTests.Application.Commands.UpdateCategory
             _handler = new UpdateNameCategoryCommandHandler(_repo.Object);
         }
 
+        [Fact]
         public async Task Update_ShouldReturns_WhenNameIsValid() 
         {
             //Arrange

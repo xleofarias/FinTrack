@@ -7,8 +7,8 @@ namespace FinTrack.Domain.Entities;
 
 public sealed class Transaction : Entity
 {
-    public Money Amount { get; private set; }
-    public string Description { get; private set; }
+    public  Money Amount { get; private set; } = null!;
+    public string Description { get; private set; } = null!;
     public DateTime Date { get; private set; }
     public TransactionType Type { get; private set; }
     public Guid CategoryId { get; private set; }

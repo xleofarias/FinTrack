@@ -4,6 +4,7 @@ using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using FinTrack.API.Contracts.Categories;
 using FinTrack.Application.Categories.Commands.UpdateNameCategoryCommand;
+using FinTrack.Application.Categories.Commands.UpdateColorCategoryCommand;
 
 namespace FinTrack.API.Controllers
 {
@@ -19,13 +20,13 @@ namespace FinTrack.API.Controllers
         }
 
         [HttpGet("{id:guid}")]
-        public async Task<IActionResult> GetByCategoryId(Guid categoryId, CancellationToken ct = default)
+        public async Task<IActionResult> GetByCategoryId(Guid id, CancellationToken ct = default)
         {
-            var result = new GetByIdCategoryQuery(categoryId);
+            var result = new GetByIdCategoryQuery(id);
 
-            await _mediator.Send(result, ct);
+            var category = await _mediator.Send(result, ct);
             
-            return Ok(result);
+            return Ok(category);
         }
 
         [HttpPost]
@@ -43,11 +44,11 @@ namespace FinTrack.API.Controllers
         }
 
         [HttpPut("{id:guid}/Name")]
-        public async Task<IActionResult> UpdateNameCategory(Guid categoryId, [FromBody] UpdateCategoryNameRequest command, CancellationToken ct = default)
+        public async Task<IActionResult> UpdateNameCategory(Guid id, [FromBody] UpdateCategoryNameRequest command, CancellationToken ct = default)
         {
             var name = command.Name;
 
-            var updateCommand = new UpdateNameCategoryCommand(categoryId, name);
+            var updateCommand = new UpdateNameCategoryCommand(id, name);
 
             await _mediator.Send(updateCommand, ct);
 
@@ -55,11 +56,11 @@ namespace FinTrack.API.Controllers
         }
 
         [HttpPut("{id:guid}/Color")]
-        public async Task<IActionResult> UpdateColorCategory(Guid categoryId, [FromBody] UpdateCategoryColorRequest command, CancellationToken ct = default)
+        public async Task<IActionResult> UpdateColorCategory(Guid id, [FromBody] UpdateCategoryColorRequest command, CancellationToken ct = default)
         {
             var color = command.Color;
 
-            var updateCommand = new UpdateNameCategoryCommand(categoryId, color);
+            var updateCommand = new UpdateColorCategoryCommand(id, color);
 
             await _mediator.Send(updateCommand, ct);
 
